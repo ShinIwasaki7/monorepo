@@ -12,7 +12,7 @@
 			"installGradle": "false"
 		},
 		"ghcr.io/itsmechlark/features/act:1": {}
-	}
+	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
@@ -21,7 +21,42 @@
 	// "postCreateCommand": "java -version",
 
 	// Configure tool-specific properties.
-	// "customizations": {},
+	"customizations": {
+		"vscode": {
+			"settings": {
+				// Java
+				"[java]": {
+					"editor.defaultFormatter": "redhat.java"
+				},
+				"java.complie.nullAnalysis.mode": "automatic",
+				"java.configuration.updateBuildConfiguration": "interactive",
+				"java.saveActions.organizeImports": true,
+				"java.checkstyle.version": "10.18.2"
+			},
+			"extensions": [
+				// Vue
+				"Vue.volar",
+				"dbaeumer.vscode-eslint",
+				"stylelint.vscode-stylelint",
+				// java
+				"redhat.java",
+				"vscjava.vscode-java-debug",
+				"vscjava.vscode-java-dependency",
+				"vscjava.vscode-java-test",
+				"vscjava.vscode-maven",
+				"shengchen.vscode-checkstyle",
+				"vmware.vscode-boot-dev-pack",
+				// YAML
+				"redhat.vscode-yaml",
+				// Shell
+				"foxundermoon.shell-format",
+				"timonwong.shellcheck",
+				// OpenAPI
+				"Redocly.openapi-vs-code",
+				"42Crunch.vscode-openapi"
+			]
+		}
+	}
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
